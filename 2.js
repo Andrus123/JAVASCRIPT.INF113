@@ -31,3 +31,13 @@ console.log("Genero: ",persona.genero);
 
 var caja = document.querySelector('#caja');
 console.log("Caja: ",caja);
+
+caja.style.width = "200px";
+caja.style.height = "200px";
+caja.style.background = "magenta";
+
+var cajas = document.querySelectorAll('.cajas');
+
+cajas[0].style.width = "100px";
+cajas[0].style.height = "100px";
+cajas[0].style.background = "green";
