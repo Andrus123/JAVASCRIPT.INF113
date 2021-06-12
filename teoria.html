@@ -1,0 +1,107 @@
+Formularios - Teoría:
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Documento sin título</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <p>HTML permite crear formularios WEB para el intercambio de los datos e inforacion o la interaccion con los
+        usuarios, son utiles para recopilar datos, sitios de comercio electronico, etc. Se envian los datos o
+        informacion mediante formularios hacia un agente (servidor WEB, servidor de datos, servidor de correos, etc.)
+    </p>
+
+    <h4>Elemento Formulario</h4>
+    <p>Define un formulario, sus atributos son: method, action<br /></p>
+    i) method: especifica la forma de pasar los valores de los campos al programa de tratamiento, y toma dos posibles
+    valores get y el post. Post es el mas utilizado porque los datos se incluyen dentro el cuerpo formulario y se
+    envian, en cambio el metodfo get envia los datos en la URL separados por un caracter hacia su destino que es el
+    servidor y tiene muchas desventajas y limitaciones <br />
+    ii) action: mediante este atributo le indicamos el curso al que accedera el navegador, una vez que el formulario
+    haya sido enviado <br />
+    iii) enctype: indica el tipo de codificacion empleada, se utiliza cuando en el envio de correos
+    <h1>Elementos de Formulario</h1>
+    <p>Los elementos de formulario se denominan "campos de formulario" o "Controles de Formulario", entre ellos podemos
+        citar: cuadros de texto, botones, contraseñas, etc.</p>
+
+    <h2>Control INPUT</h2>
+    <p>La mayorida de los controles se crean con la etiqaueta INPUT: text, password, checkbos, radio, submit, reset,
+        file, hiden, imagen, button; sus atributos son:<br />
+
+        i) type: define el tipo de control<br />
+        ii) name: especifica el nombre de la variable que tomara el valor introducido en el control <br />
+        iii) id: especifica el nombre de la variable que tomara el valor introducido en el control <br />
+        iv) value: especifica el valor por defecto que tendra el campo o control<br />
+        v) name: especifica el nombre de la variable que tomara el valor introducido en el control <br />
+
+    <h3>type=text</h3>
+    <p>Es el mas utilizado en los formularios, generalmente se utiliza pora introducir datos, sus atributos son:<br />
+        i) name<br />
+        ii value<br />
+        iii) id, identificador unico del control<br />
+        iv) size, indica el tamaño de caracteres con el que se muestra el campo<br />
+        v) maxlength, indica el numero maximo de caractgeres a introducir en el campo<br />
+        vi) readonly, permite que los usuarios puedan ver el contenido del campo de texto, pero no modificardo<br />
+        vii) disabled, deshabilita un cuadro de texto, y ademas el navegador no envia sus datos al servidor<br />
+
+    <h3>type=password</h3>
+    <p>Es similar al anterior con la diferencia , que cuando el usuario escribe los datos , en su lugar se muestra los
+        asteriscos, se utilizan para escribir datos sensibles asi como contraseñas</p>
+
+    <h3>type=checkbox</h3>
+    <p>O casillas de verficacion, se utiliza cuando el usuario selecciona o deselecciona opciones individualmente, cada
+        una de ellos es complementamente independiente del resto pero no excluyente<br />
+        checked, muestra una casilla seleccionada por defecto
+    </p>
+
+    <h3>type=radio</h3>
+    <p>Es similar al anterior, con la diferencia muy importante de que son mutuamente excluyentes, significa que el
+        ususario puede seleccionar una sola opcion
+    </p>
+
+    <h3>Fichero adjunto</h3>
+    <p>Los formulario tambien permiten adjuntar archivos al servidor, y no existen limitaciones, pero los servidores
+        pueden añadir restricciones, en este control es obligatorio añadir el atributo enctype</p>
+
+    <h3>Campos Ocultos</h3>
+    <p>Se emplean para añadir informacion oculta en el formulario. Los campos ocultos no se ven en el navegador.
+        generalmente se utiliza para incluir informacion que necesita el servidor, sin que el usuario se entere</p>
+
+    <h3>Boton imagen</h3>
+    <p>Los botones imagen permiten personalizar el formulario, para ello se utilizan imagenes reemplazando al boton</p>
+
+    <h3>Boton</h3>
+    <p>Define botones avanzados, ejemplo:</p>
+
+    <h3>Boton de envio de datos de formulario</h3>
+    <p>Se dispone de un boton para el envio de datos de formulario al programa de tratamiento</p>
+    <h3>Boton de reseteo de formulario</h3>
+    <p>Permite resetear o borar los datos introducidos en los campos de formulario, y devuelve el formulario a su estado
+        original</p>
+
+    <h3>Entrada de datos enmultiples lineas</h3>
+    <p>Es un campo de texto que abarca varias lineas, sus atributos son: rows y cols, que definen el numero de filas y
+        columnas respectivamente del campo de texto</p>
+
+    <h3>Entrada de datos a traves de campos de seleccion</h3>
+    <p>Con este campo podremos desplegar listas de opciones, para ello existen tres tipos de listas. El primero es de
+        las listas mas utilizadas que muestran un valor y permite seleccionar un valor; el segundo tipo de lista es
+        igual al anterior, pero con la diferencia, es que esta muestra varios valores a la vez; y el tercer tipo de
+        lista muestra varios valores y permite realizar selecciones multiples. sus atributos son: id, name, size,
+        multiple, y cada elemento se lo define con la etiqueta option, y tambien puede tomar los atributos value y
+        selected (seleccion pr defecto)</p>
+    <h3>Etiqueta Fieldset y legend</h3>
+    <p>La etiqueta fieldset agrupa campos de formulario y legend asigna un nombre a cada grupo</p>
+    </p>
+
+</body>
+
+</html>

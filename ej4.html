@@ -25,6 +25,28 @@
         var mensaje3 = men1.length;
         document.write(mensaje3+"</br>");
 
+        //Obtiene el caracter en la posicion indicada
+        var mensaje4 = men2.charAt(3);
+        document.write(mensaje4+"</br>");
+
+        //Busca la primera posicion en la que se encuentra un caracter, sino lo encuentra envia "-1"
+        var mensaje5 = men2.indexOf('u');
+        document.write(mensaje5+"</br>");
+
+        //Substring(inicio, final), extrae una porcion de una cadena de texto, el segundo parametro es opcional
+        var men = "Hola Mundo";
+        var porc1 = men.substring(2,7);
+        document.write(porc1+"</br>");
+
+        // split, convierte una cadena en array de cadenas, es un separador 
+        // join(), funcion contraria a split, une los elementos de un array
+        // pop(), elimina el ultimo elemento del array, por tanto el array se modifica y su longitud disminuye en uno
+        // shift(), añade un elemento al principio del array, la longitud aumenta en uno
+        //reverse(), modifica un array, colocando sus elementos en orden inverso
+
+        var saludo = 'Hola Mundo - Carrera de Informatica';
+        var separa = saludo.split(' ');
+        document.write(separa+"</br>");
     </script>
 </body>
 </html>
