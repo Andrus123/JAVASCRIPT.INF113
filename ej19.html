@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        function generarFibo(){
+            s=prompt('Introduzca un numero:');
+            n = parseInt(s);
+    
+            var a=0;
+            var b=1;
+            for (var i = 0; i <= n; i++) {
+                var s=a+b;
+                document.write(s+' ');
+                a=b;
+                b=s;
+            }    
+
+        }
+    </script>    
+</head>
+<body>
+<form action="">
+    <input type="button" value="Generar Fibonacci" name="boton1" onclick="generarFibo()">
+</form>
+</body>
+</html>

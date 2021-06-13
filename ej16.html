@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script language="javascript" type="text/javascript">
-        function suma(){
-            n1=document.formu.op1.value
-            n2=document.formu.op2.value
+        function suma() {
+            n1 = document.formu.op1.value
+            n2 = document.formu.op2.value
 
-            x=parseFloat(n1)
-            y=parseFloat(n2)
-            var s=x+y
-            document.formu.re.value=s
+            x = parseFloat(n1)
+            y = parseFloat(n2)
+            var s = x + y
+            document.formu.re.value = s
         }
-    </script>    
+    </script>
 </head>
+
 <body>
+    <form action="" name="formu" method="">
+        <table border="1" align="center">
+            <tr>
+                <td rowspan="3"><input type="button" name="calculo" onclick="suma()" value="Suma"></td>
+                <td>x</td>
+                <td><input type="text" name="op1"></td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td><input type="text" name="op2"></td>
+            </tr>
+            <tr>
+                <td>Res:</td>
+                <td><input type="text" name="re"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

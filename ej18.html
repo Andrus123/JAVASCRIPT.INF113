@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>Mostrar los Numeros Randomicos hasta N</h3>
+<script>
+
+s=prompt('Introduzca un numero:');
+n = parseInt(s);
+
+document.write("<table border='1'>");
+var i=1;
+while (i <= n) {
+    document.write("<tr>");
+    var r = Math.random()*100;
+    document.write("<td>");
+        document.write(i);
+    document.write("</td>");       
+    document.write("<td>");
+        document.write(r);
+    document.write("</td>");
+    i++;
+    document.write("</tr>");
+}
+
+document.write("</table>");
+</script>
+</body>
+</html>
